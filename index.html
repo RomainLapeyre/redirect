@@ -13,44 +13,12 @@
 </head>
 
 <body>
-    <!-- Facebook widget-->
-    <script>
-    window.fbAsyncInit = function() {
-    FB.init({
-    appId : '1751254291756263',
-    autoLogAppEvents : true,
-    xfbml : true,
-    version : 'v2.6'
-    });
-    FB.AppEvents.logPageView();
-    };
-
-    (function(d, s, id){
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <!--
-    <div class="fb-customerchat"
-    data-href="{{shop.permanent_domain}}"
-    messenger_app_id = "1751254291756263"
-    page_id="326831910853669"
-         minimized="false"
-    ref="g:shopify:{{customer.id}}:{{shop.permanent_domain}}">
-    </div>
-    -->
-    <div class="fb-customerchat"
-         data-href=""
-         messenger_app_id = "1751254291756263"
-         page_id="326831910853669"
-         minimized="false"
-         ref="g:shopify:"
-    >
-    </div>
+   <!-- Gorgias Chat Widget Start -->
+<div id="gorgias-chat">
+<script>window.gorgiasChatParameters = {}</script>
+<script src="https://config.gorgias.io/production/bgJ1Q6QWMP7vXKOM/chat/984vj295JE2PKGOZ.js" defer></script>
+</div>
+<!-- Gorgias Chat Widget End -->
 
 </body>
 </html>
